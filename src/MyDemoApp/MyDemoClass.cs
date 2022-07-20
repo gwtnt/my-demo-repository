@@ -2,8 +2,15 @@ namespace MyDemoApp;
 
 public class MyDemoClass
 {
-    public static string ReturnMe(string value)
+    private readonly string? _forceResult;
+
+    public MyDemoClass(string? forceResult)
     {
-        return value;
+        _forceResult = forceResult;
+    }
+    
+    public string ReturnMe(string value)
+    {
+        return _forceResult ?? value;
     }
 }
