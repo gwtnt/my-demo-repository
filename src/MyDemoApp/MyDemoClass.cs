@@ -2,7 +2,7 @@ namespace MyDemoApp;
 
 public class MyDemoClass
 {
-    public string ReturnMe(string value)
+    public static string ReturnMe(string value)
     {
         return value;
     }

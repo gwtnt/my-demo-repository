@@ -11,7 +11,7 @@ public class UnitTest1
 
         var myTestString = "Hello World";
 
-        var resultString = myDemoClass.ReturnMe(myTestString);
+        var resultString = MyDemoClass.ReturnMe(myTestString);
 
         resultString.Should().Be(myTestString);
     }
