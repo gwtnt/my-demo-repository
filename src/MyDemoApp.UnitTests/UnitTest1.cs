@@ -37,6 +37,6 @@ public class UnitTest1
 
         var resultString = myDemoClass.ReturnMe(myTestString);
 
-        resultString.Should().Be(myTestString);
+        resultString.Should().NotBe(myTestString);
     }
 }
