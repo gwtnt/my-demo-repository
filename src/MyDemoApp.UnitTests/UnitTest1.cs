@@ -27,4 +27,16 @@ public class UnitTest1
 
         resultString.Should().NotBe(myTestString);
     }
+    
+    [Fact]
+    public void Test3()
+    {
+        var myDemoClass = new MyDemoClass("This will be the result");
+
+        var myTestString = "Hello World";
+
+        var resultString = myDemoClass.ReturnMe(myTestString);
+
+        resultString.Should().Be(myTestString);
+    }
 }
